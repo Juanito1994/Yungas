@@ -15,7 +15,6 @@ app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
 
-
 @app.route('/add_contact', methods=['POST'])
 def add_contact():
     try:
