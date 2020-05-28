@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<center>
+    <p> <!--DESCRIPCION-->
+        <div class="jumbotron" mt-5>
+                <h1 class="display-4"  >El alojamiento </h1>
+                <hr class="my-4">
+            <ul>
+                <span class="lead">
+                    <br> <li> El lugar cuenta con ambientes luminosos, una cama matrimonial, 2 camas individuales y un sillon-cama, junto con baños en ambos pisos. Tambien posee cocina totalmente equipada, lavaropas, ropa de cama y de baño y parrila en el exterior.</li><br> <li> Contamos también con una biblioteca, una guitarra y dos bicicleta de las que nuestros huespedes podrán hacer uso de forma responsable y procurando dejar todo en la mismas condiciones en que se encontraron.</li> <br> <li> La casa cuenta con diversos espacios en el exterior donde podrán avistar diversa flora y fauna autoctona, asi también como algunos arboles frutales de producción propia. </li>
+                </span>
+            </ul>
+        </div>
+            <!--FOTOS-->
+                <p><img src="/static\images\hamacasExt.jpg"  alt="" width="500" height="400" hspace="10px">
+                    <img src="static\images\casa.webp" alt=""  width="500" height="400" hspace="10px"></p>
+                 <br>
+                <p> <img src="/static\images\living1.JPG" alt="" width="500" height="400" hspace="10px">
+                     <img src="static\images\living7.JPG" alt="" width="500" height="400" hspace="10px"></p> 
+                 <br>
+                <p><img src="/static\images\hogar.jpg" alt="" width="500" height="400" hspace="10px">
+                     <img src="static\images\living.jpg" alt="" width="500" height="400" hspace="10px"></p> 
+                     <br>
+                <p><img src="/static\images\cocina2.JPG" alt="" width="675" height="400" hspace="10px">
+                    <img src="/static\images\pasillo.jpg" alt="" width="350" height="400" hspace="10px"></p> 
+                 <br>   
+                <p><img src="/static\images\hab2.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="static\images\camasInd.JPG" alt="" width="500" height="400" hspace="10px"></p>
+                 <br>
+                <p><img src="/static\images\hab.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="static\images\terrace1.JPG" alt="" width="500" height="400" hspace="10px"></p>
+                 <br>
+                <p><img src="/static\images\bañoB.JPG" alt="" width="500" height="400" hspace="10px">
+                     <img src="static\images\baño.webp" alt="" width="500" height="400" hspace="10px"></p> 
+                 <br>
+                <p><img src="/static/images/yungas3.png" alt="" width="500" height="400" hspace="10px"> 
+                    <img src="static\images\balcon.JPG" alt="" width="500" height="400" hspace="10px"></p> 
+                 <br>
+                <p><img src="/static\images\land1.jpg" alt="" width="500" height="400" hspace="10px">
+                    <img src="static\images\pava.JPG" alt="" width="500" height="400" hspace="10px"></p> 
+                 <br>
+                <p><img src="/static\images\rojo.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="/static\images\bird.JPG" alt="" width="500" height="400" hspace="10px"> </p> 
+                <p><img src="static\images\posa.JPG" alt="" width="500" height="400" ></p>
+            <!--REGRESAR!-->
+        <button>
+            <a class="button" href="{{url_for('fotos')}}">Regresar</a>
+         </button>
+    </p>
+
+    
+
+</center>
+
+{% endblock %}

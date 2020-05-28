@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<center>
+   <!--DESCRIPCION-->
+    <br>
+      <div class="jumbotron" style="width: 100%;">
+        <p class="display-4">Contacto </p>
+        <hr class="my-4">
+            <div class="social-bar"><br>
+              <h4><em> Para mas información no dudes en contactarnos a través de:</em></h4>
+              <br><br>
+               <a href="https://www.instagram.com/yungas.hospedaje/" class="icon-instagram" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="insta"width="30px" length="30px" > Instagram: </a>@yungas.hospedaje
+               <br><br>
+               <a href="https://www.facebook.com/yungashospedaje" class="icon-facebook" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png" alt="face" width="30px" length="30px" > Facebook: </a>Yungas hospedaje
+               <br><br>
+               <a href="https://web.whatsapp.com/" class="" target="_blank"><img src="https://saltaexperience.com/wp-content/uploads/2018/01/whatsapp-icon.png" alt="wpp" width="30px" length="30px" > WhatsApp: </a>+54911561548810
+               <br><br>
+               <a  href="mailto:jrebori@agro.uba.ar" class="icon-mail" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/gmail-icon-3.svg" alt="email" width="30px" length="30px" > Email: </a>yungas.hospedaje@gmail.com 
+                <br>
+            </div>
+               <hr class="my-4">
+               <br>
+              <div class="lead"><em> También podes dejarnos tus consultas aquí, te contactemos en breve con información para que tu pasaje por Salta sea inolvidable!</em>
+      </div>
+  <br>
+    <form action="/add_contact", method="POST">
+        <input type="varchar", name="fullname", placeholder="Nombre completo" id="fullname">
+          <br>
+        <input type="varchar", name="phone", placeholder="Telefono" id="phone">
+          <br>
+        <input type="varchar", name="email", placeholder="E-mail" id="email">
+          <br>
+        <textarea type="text" name="message" id="message" placeholder="Mensaje" cols="60" rows="10"></textarea>
+          <br>
+        <button type="submit">
+            Enviar
+          </button>
+    </form>
+      <br><br>
+    <div class="sharethis-inline-share-buttons"></div> 
+    
+</center>
+{% endblock %}

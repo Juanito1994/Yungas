@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="box">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5eacda8f5433140012c37161&product=inline-share-buttons" async="async"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="static.css">
+    <title>Yungas hospedaje</title>
+  </head>
+
+<!--Bootstrap 4-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!--CSS Custom-->
+
+  <link rel="stylesheet" href="{{ url_for ('static', filename='static.css') }}">
+
+ <body class="box"><!---https://cdn.pixabay.com/photo/2019/12/26/05/16/green-4719686_960_720.jpg-->
+    <!--Barra de acciones-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{url_for('index')}}">Yungas hospedaje</a>
+        <a class="navbar-brand" href="{{url_for('fotos')}}">Fotos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">  <!---Alineado a la izquierda-->
+            <a class="navbar-brand" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+            <a class="navbar-brand" href="{{url_for('about')}}">¿Cómo llegar?</a>
+            <a class="navbar-brand" href="{{url_for('atracciones')}}">Atracciones</a>
+            <a class="navbar-brand" href="{{url_for('contacto')}}">Contacto</a>
+          </ul>
+        </div>
+    </nav>
+        <div class="container">
+            <nav class="navbar navbar-light" style="background-color:darkolivegreen">
+                {% block content %}
+                {% endblock %}
+            </nav> 
+        </div>
+  </body>
+</html>
