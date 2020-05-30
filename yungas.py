@@ -2,17 +2,17 @@
 
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask import jsonify
-from flaskext.mysql import MySQL
+#from flask.ext.mysql import MySQL
 
 app = Flask (__name__)
-mysql = MySQL()
+#mysql = MySQL()
 
 # MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = ''
-app.config['MYSQL_DATABASE_DB'] = 'flaskcontacts'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost'
-mysql.init_app(app)
+#app.config['MYSQL_DATABASE_USER'] = 'root'
+#app.config['MYSQL_DATABASE_PASSWORD'] = ''
+#app.config['MYSQL_DATABASE_DB'] = 'flaskcontacts'
+#app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+#mysql.init_app(app)
 
 
 @app.route('/add_contact', methods=['POST'])
