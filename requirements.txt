@@ -9,6 +9,7 @@ Flask==1.1.2
 Flask-MySQL==1.5.1
 Flask-MySQLdb==0.2.0
 get==2019.4.13
+gunicorn==20.0.4
 isort==4.3.21
 itsdangerous==1.1.0
 Jinja2==2.11.2
@@ -26,5 +27,6 @@ request==2019.4.13
 six==1.15.0
 toml==0.10.1
 virtualenv==20.0.21
+virtualenvwrapper-win==1.2.6
 Werkzeug==1.0.1
 wrapt==1.12.1
