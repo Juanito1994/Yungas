@@ -14,7 +14,7 @@
   <!---FOTOS-->
       <div class="media">
         <div class="media-body">
-          <p><h5 class="mt-0"><strong> ¿Qué mejor que un hermoso atardecer desde yungas hospedajes?</strong></h5></p>
+          <p><h5 class="mt-0"><strong> ¿Qué mejor que un hermoso atardecer desde yungas hospedaje?</strong></h5></p>
           <p><img src="/static\images\Fondo.JPG.webp" alt="El lugar" width="900" height="700" ></p>
           <br>
           <h5><em>Un alojamiento completo donde podrás disfrutar de la conexión con la naturaleza solamente estando a 30 minutos del centro de la cuidad de Salta.</em></h5>
@@ -23,13 +23,11 @@
       </div>
 
   <!--Botones-->
-      <a class="btn btn-primary btn-lg" href="{{url_for('fotos')}}"fotos role="button">Fotos del lugar!</a>
+      <a class="btn btn-primary btn-lg" href="{{url_for('fotos')}}" role="button">Fotos del lugar!</a>
       <br>
       <hr class= "my-4"> 
       <br>
-      <div class="sharethis-inline-share-buttons"></div> 
-      <br><br>
-      <button type="button" href="{{url_for('contacto')}}" class="btn btn-info">Contáctanos</button>
+      <a class="btn btn-info" href="{{url_for('contacto')}}" role="button">Contáctanos</button>
   </center>
 
 {% endblock %}
