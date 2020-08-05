@@ -24,14 +24,15 @@
               <div class="lead"><em> También podes dejarnos tus consultas aquí, te contactemos en breve con información para que tu pasaje por Salta sea inolvidable!</em>
       </div>
   <br>
-    <form action="/add_contact", method="POST">
-        <input type="varchar", name="fullname", placeholder="Nombre completo" id="fullname">
+   <!--<form action="/add_contact", method="POST">         BASE DE DATOS SQL (ANULADO)-->
+     <form  id="contact-form" action="enviar2.php" method="post">
+        <input type="varchar", name="nombre", placeholder="Nombre completo" required="required">
           <br>
-        <input type="varchar", name="phone", placeholder="Telefono" id="phone">
+        <input type="varchar", name="phone", placeholder="Telefono" required="required">
           <br>
-        <input type="varchar", name="email", placeholder="E-mail" id="email">
+        <input type="varchar", name="email", placeholder="E-mail" required="required">
           <br>
-        <textarea type="text" name="message" id="message" placeholder="Mensaje" cols="60" rows="10"></textarea>
+        <textarea type="text" name="mensaje" id="" placeholder="Mensaje" cols="60" rows="10" ></textarea>
           <br>
         <button type="submit">
             Enviar
