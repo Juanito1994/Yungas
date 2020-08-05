@@ -25,7 +25,7 @@
       </div>
   <br>
    <!--<form action="/add_contact", method="POST">         BASE DE DATOS SQL (ANULADO)-->
-     <form  id="contact-form" action="enviar2.php" method="POST">
+     <form  id="contact-form" action="/enviar2.php" method="post">
         <input type="text", name="nombre", placeholder="Nombre completo" required="required">
           <br>
         <input type="phone", name="phone", placeholder="Telefono" required="required">
@@ -34,7 +34,7 @@
           <br>
         <textarea type="text" name="mensaje" class="form-control" placeholder="Mensaje" cols="60" rows="10" ></textarea>
           <br>
-        <button type="submit" href="{{url_for('index')}}">
+        <button type="submit">
             Enviar
           </button>
       </form>
