@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <center>
+      <p>
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenido a Yungas Hospedaje</h1>
+            <p class="lead">El lugar indicando para reencontrarte entre la naturaleza y el descanso</p>
+            <hr class="my-4">
+            <p class="lead"><em> Ubicado a 10 kilometros de la cuidad de Salta es un punto ideal para amantes de la naturaleza que quieren conocer el norte Argentino</em></p>
+            <hr class= "my-4">
+      </p>
+
+  <!---FOTOS-->
+      <div class="media">
+        <div class="media-body">
+          <p><h5 class="mt-0"><strong> ¿Qué mejor que un hermoso atardecer desde yungas hospedaje?</strong></h5></p>
+          <p><img src="/static\images\Fondo.JPG.webp" alt="El lugar" width="900" height="700" ></p>
+          <br>
+          <h5><em>Un alojamiento completo donde podrás disfrutar de la conexión con la naturaleza solamente estando a 30 minutos del centro de la cuidad de Salta.</em></h5>
+          <br>
+        </div>
+      </div>
+
+  <!--Botones-->
+      <a class="btn btn-primary btn-lg" href="{{url_for('fotos')}}"fotos role="button">Fotos del lugar!</a>
+      <br>
+      <hr class= "my-4"> 
+      <br><br>
+      <button type="button" href="{{url_for('contacto')}}" class="btn btn-info">Contáctanos</button>
+  </center>
+
+{% endblock %}
+
+

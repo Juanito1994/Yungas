@@ -1,35 +1,463 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Site Metas -->
+    <title>Yungas hospedaje</title>
+    <meta name="keywords" content="Yungas">
+    <meta name="description" content="Alojamiento en la Caldera ">
+    <meta name="author" content="Juan R.">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/Floresicono.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/Floresicono.png">
+        <!-- All core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/colors.css" rel="stylesheet">
 
-{% block content %}
-  <center>
-      <p>
-        <div class="jumbotron">
-            <h1 class="display-4">Bienvenido a Yungas Hospedaje</h1>
-            <p class="lead">El lugar indicando para reencontrarte entre la naturaleza y el descanso</p>
-            <hr class="my-4">
-            <p class="lead"><em> Ubicado a 10 kilometros de la cuidad de Salta es un punto ideal para amantes de la naturaleza que quieren conocer el norte Argentino</em></p>
-            <hr class= "my-4">
-      </p>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  <!---FOTOS-->
-      <div class="media">
-        <div class="media-body">
-          <p><h5 class="mt-0"><strong> ¿Qué mejor que un hermoso atardecer desde yungas hospedaje?</strong></h5></p>
-          <p><img src="/static\images\Fondo.JPG.webp" alt="El lugar" width="900" height="700" ></p>
-          <br>
-          <h5><em>Un alojamiento completo donde podrás disfrutar de la conexión con la naturaleza solamente estando a 30 minutos del centro de la cuidad de Salta.</em></h5>
-          <br>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="sidewrapper sidenav">
+            <div class="text-right"><a href="#" id="nav-close"><i class="flaticon-multiply"></i></a></div>
+            <div class="widget">
+                <div class="widget-title-sidebar">
+                    <h3><span><i class="fa fa-instagram"></i> Follow Us</span></h3>
+                </div><!-- end widget-title -->
+
+                <div class="instagram-widget text-center">
+                    <p>This is a custom widget area, you can add anything here. An example Instagram widget area.</p>
+
+                    <div class="image-area clearfix">
+                        <a href="#"><img src="upload/insta_01.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_02.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_03.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_04.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_05.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_06.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_07.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_08.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_09.jpg" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="upload/insta_10.jpg" alt="" class="img-fluid"></a>
+                    </div>                  
+                </div><!-- end instagram-widget -->
+            </div><!-- end widget -->
+
+            <div class="footer-copy text-center">
+                <p>Thanks for using <a href="http://html.design">HTML Design</a> website templates</p>
+            </div><!-- end copy -->
+        </div><!-- end sidewrapper -->
+
+        <header class="header transparent-header">
+            <div class="container">
+                <nav class="navbar navbar-toggleable-md navbar-inverse yamm" id="slide-nav">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTopMenu" aria-controls="navbarTopMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Yungas hospedaje</a>
+                    <div class="collapse navbar-collapse" id="navbarTopMenu">
+                        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                            <li><a class="nav-link" href="#Fotos-del-lugar">Fotos</a></li>
+                            <li><a class="nav-link" href="C:\Users\Juan Rebori\Google Drive\JR\Python\Yungas\atracciones.html">Atracciones</a></li>
+
+	<!-- NO NECESARIO   <li class="nav-item dropdown has-submenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marketing digital</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                    <li><a class="dropdown-item" href="#">Publicidad en Google<span class="hidden-md-down hidden-sm-down hidden-xs-down"></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Redes sociales <span class="hidden-md-down hidden-sm-down hidden-xs-down"></span></a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Posicionamiento web SEO</a></li>
+                                    <li><a class="dropdown-item" href="#">Campañas Pagas</a></li>
+                                    <li><a class="dropdown-item" href="#">Email Marketing</a></li>
+									<li><a class="dropdown-item" href="#">Community manager</a></li>
+                                </ul>
+                            </li>-->  
+                            
+                            <li><a class="nav-link" href="templates/contacto.html">Contacto</a></li>
+                        </ul>
+                        <div class="nav navbar-nav ml-auto hidden-md-down hidden-sm-down hidden-xs-down">
+                            <div class="head-social">
+                        <a href="https://www.facebook.com/yungashospedaje" title="Facebook"><i class="fa fa-facebook"></i></a> 
+                                <a href="https://www.instagram.com/yungas.hospedaje/" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+
+                            <!-- end social -->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--/.container inside nav-->
+        </header>
+        <section class="hero">
+            <div class="magnifier grd3"></div>
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                     <!--   <h4><mark>HTML5</mark> Responsive website template archive for free!</h4> NO NECESARIO--> 
+                            <h2>Bienvenido a Yungas hospedaje</h2>
+                            <br><br>
+                            <h2 class="lead"><u> El lugar indicando para reencontrarte entre la naturaleza y el descanso</u></h2>
+                            <a href="#Fotos-del-lugar" class="btn btn-success">Fotos del alojamiento</a> <br><br><br>
+                            <a href="templates/contacto.html" class="btn btn-orange"><mark>Contáctanos</mark></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <!--     <a href="#first-section" class="bottom-button"><i class="flaticon-mouse"></i></a>-->
+
+            <!-- end top-message -->
+        </section><!-- end section -->
+
+<!---->
+        <section class="section bt littlepad">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="screen-normal wow slideInLeft">
+                            <img src="images/Fondo.JPG.webp" alt="" class="img-fluid">
+                        </div><!-- end screen -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-7 mobmartop30">
+                        <div class="tagline-v2 padleft30">
+                            <h3 class="align-content-lg-center">¿Que mejor que un hermoso atardecer desde yungas hospedaje?</h3>
+                            <p>Increibles paisajes para disfrutar de la conexión con la naturaleza estando solamente a 30 minutos del centro de la cuidad de Salta</p>
+                        </div><!-- end tagline -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                <br><br>
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="screen-normal wow slideInLeft">
+                            <img src="images/hamacasExt.jpg" alt="" class="img-fluid">
+                        </div><!-- end screen -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-7 mobmartop30">
+                        <div class="tagline-v2 padleft30">
+                            <h3>Ideal para relajarse y a solo 30 minutos de la cuidad</h3>
+                            <p>Un alojamiento completo escondido en medio de las yungas salteñas, donde podrán avistar especies autoctonas y disfrutar del aire puro del lugar</p>
+                            <a href="#Fotos-del-lugar" class="btn btn-gradient grd4 withradius secbtn withicon"> Descubrí más <i class="fa fa-long-arrow-right"></i></a>
+                        </div><!-- end tagline -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+ <!--FOTOS DEL LUGAR-->
+        <section id="first-section" class="section lb littlepad">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="btn btn-light" name="El alojamiento"><strong><u> El alojamiento</u></strong></h2>
+                        <p><li><b> El lugar cuenta con ambientes luminosos, una cama matrimonial, 2 camas individuales y un sillon-cama, junto con baños en ambos pisos. Tambien posee cocina totalmente equipada, lavaropas, ropa de cama y de baño y parrila en el exterior.</li><br> <li> Contamos también con una biblioteca, una guitarra y dos bicicleta de las que nuestros huespedes podrán hacer uso de forma responsable y procurando dejar todo en la mismas condiciones en que se encontraron.</li> <br> <li> La casa cuenta con diversos espacios en el exterior donde podrán avistar diversa flora y fauna autoctona, asi también como algunos arboles frutales de producción propia.</em></b></p></li>
+                </div>
+                <div class="section-title text-center">
+                    <h4 name="Fotos-del-lugar">Fotos del lugar</h4>
+                </div><!-- end box -->
+                <div class="container align-self-auto wow slideInUp img-fluid">
+                    <span class="border border-success">
+                    <img src="images\hamacasExt.jpg"  alt="" width="500" height="400" hspace="10px">
+                    <img src="images\casa.webp" alt=""  width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\living1.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\living7.JPG" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\hogar.jpg" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\living.jpg" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\cocina2.JPG" alt="" width="650" height="400" hspace="10px">
+                    <img src="images\pasillo.jpg" alt="" width="350" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\hab.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\camasInd.JPG" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\bañoB.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\terrace1.JPG" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\baño.webp" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\balcon.JPG" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images/yungas3.png" alt="" width="500" height="400" hspace="10px"> 
+                    <img src="images\land1.jpg" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\posa.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\pava.JPG" alt="" width="500" height="400" hspace="10px">
+                    <br><br>
+                    <img src="images\rojo.JPG" alt="" width="500" height="400" hspace="10px">
+                    <img src="images\bird.JPG" alt="" width="500" height="400" hspace="10px">
+                    </span>
+                </div><!--end container-->
+            </div> <!-- end container -->
+        </section> <!-- end section -->
+
+<!--ATRACCIONES
+        <section class="section lb section-title h4">
+            <a name="atracciones"></a>
+            <div class="container">
+                <div class="tagline-v2 text-center">
+                    <h3 > ¿Que se puede visitar en la zona?</h3>
+                    <p><li> Ubicado en el departamento de la caldera, nuestro alojamiento posee una ubicación estratégica para visitar los lugares mas emblemáticos de la provincia de salta </li> </p>
+                </div> 
+                <div class="container align-self-auto">
+                    <a href="http://turismosalta.gov.ar/contenido/18/cafayate" target="_blank">
+                        <p><img src="static\images\cafayate.jpg" alt="Cafayate" title="Cafayate" width="500" height="400" hspace="10px" >
+                    </a>
+                    <a href="http://turismosalta.gov.ar/contenido/5/la-caldera" target="_blank">
+                        <img src="http://www.salta.gov.ar/images/uploads/caldera.jpeg" alt="La caldera" title="La Caldera" width="500" height="400" hspace="10px">
+                    </a>
+                    <br><br>
+                    <a href="https://dealtura.com.ar/salinas-grandes.html" target="_blank"><p>
+                        <img src="static\images\salinas.jpg" alt="Salinas" title="Salinas grandes" width="500" height="350" hspace="10px">
+                    </a>
+                     <a href="http://turismo.salta.gov.ar/contenido/41/ciudad-de-salta" target="_blank"> 
+                        <img src="https://static.wixstatic.com/media/f49fed_bb70e555d80e4ddb90c9ee09b3215b07~mv2.jpg/v1/fill/w_1200,h_697,al_c,q_90/file.jpg" alt="Cuidad de salta" title="Salta capital"  width="500" height="350" hspace="10px">
+                    </a>
+                    <br><br>
+                    <a href="http://turismosalta.gov.ar/contenido/4/villa-san-lorenzo" target="_blank">
+                        <img src="static\images\sanLorenzo.jpg" alt="San lorenzo" title="Quebrada de San Lorenzo" width="500" height="350" hspace="10px">
+                    </a>
+                    <a href="https://www.todowebsalta.com.ar/campoalegre/" target="_blank">
+                        <img src="static\images\dique.jpg" alt="Campo Alegre" title="Dique Campo Alegre"  width="500" height="350" hspace="10px">
+                    </a>
+                    <br><br>
+                    <a href="http://turismosalta.gov.ar/contenido/13/cachi" target="_blank"><p>
+                        <img src="static\images\cachi.jpg" alt="Cachi" title="Cachi" width="500" height="350" hspace="10px">
+                    </a>
+                    <a href="https://iruya.online/" target="_blank">
+                        <img src="static/images/iruya.jpg" alt="Iruya" title="Iruya"  width="500" height="350" hspace="10px">
+                    </a>-->
+                </div><!-- end container-->
+            </div> <!--end container -->
+        </section> <!-- end section -->
+
+      <!--  <div class="section bt littlepad">
+            
+            </div> end container -->
+       <!-- </div> end section -->
+
+       <!--  <section id="first-section" class="section lb">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2 class="btn btn-light">¿Qué mejor que un hermoso atardecer desde yungas hospedaje?</h2><br><br>
+                    <h5><em>Un alojamiento completo donde podrás disfrutar de la conexión con la naturaleza solamente estando a 30 minutos del centro de la cuidad de Salta.</em></h5>
+            <div class="container">
+                <div class="section-title text-center">
+                    <h4>Marketing digital</h4>
+                    <h2>Estrategias online personalizadas </h2>
+                </div>end section-title -->
+
+              <!--  <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="service-box text-center">
+                            <img src="images/icons/icon_01.png" alt="" class="img-fluid">
+                            <h4>Campañas Pagas</h4>
+                            <p>Mediante diferentes tecnologías podemos llegar a personas muy específicas para que conozcan tu negocio.</p>
+
+                            <ul>
+                                <li>Google Ads</li>
+                                <li>Facebook & Instagram Ads</li>
+                                <li>Remarketing</li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary btn-sm withradius secbtn withicon">ver más <i class="fa fa-long-arrow-right"></i></a>
+                        </div> end box -->
+                   <!--  </div>end col -->
+
+                   <!-- <div class="col-md-4 mobmar30">
+                        <div class="service-box text-center">
+                            <img src="images/icons/icon_02.png" alt="" class="img-fluid">
+                            <h4>Metricas y Analisis</h4>
+                            <p>Reportamos las métricas de performance más importantes para tomar decisiones estratégicas.</p>
+
+                            <ul>
+                                <li>Pruebas con Analytics</li>
+                                <li>ROI (Retorno de la inversión)</li>
+                                <li>Total de tráfico SEO</li>
+                               
+                            </ul>
+
+                            <a href="#" class="btn btn-primary btn-sm withradius secbtn withicon">ver más<i class="fa fa-long-arrow-right"></i></a>
+                        </div> end box -->
+                  <!--  </div> end col -->
+
+                 <!--   <div class="col-md-4">
+                        <div class="service-box text-center">
+                            <img src="images/icons/icon_03.png" alt="" class="img-fluid">
+                            <h4>Posicionamiento SEO </h4>
+                            <p>Con nuestro servicio de SEO, ¿le gustaría aumentar la visibilidad de su negocio en Google y otros motores de búsqueda?</p>
+
+                            <ul>
+                                <li>Investigación de palabras claves</li>
+                                <li>Investigación de la Competencia</li>
+                                <li>Optimización ON-PAGE</li>
+                                
+                            </ul>
+
+                            <a href="#" class="btn btn-primary btn-sm withradius secbtn withicon">ver más<i class="fa fa-long-arrow-right"></i></a>
+                        </div> end box -->
+                    <!--</div> end col -->
+            <!--    </div> end row -->
+         <!--    </div> end container -->
+         <!-- </section> end section -->
+<!--CONTACTO-->
+        <section class="hero">
+        <div class="container-fluid; magnifier grd3" id="contacto" style="margin:0; padding:0;">
+            <div class="bg-contact100 container" style="">
+                <div class="container-contact100">
+                    <div class="wrap-contact100 d-flex justify-content-center">
+                        <!-- <div class="contact100-pic js-tilt" data-tilt>
+                            <img src="images/img-01.png" alt="IMG">
+                        </div> -->
+        
+                        <form class="contact100-form validate-form ">
+                            <div class="section-title text-center">
+                                <br>
+                                <h4 name="Fotos-del-lugar">
+                                    <span class="contact100-form-title"></span>
+                                    Contáctanos
+                                </h4>
+                            </div>
+        
+                            <div class="wrap-input100 validate-input" data-validate = "Name is required">
+                                <input class="input100; btn btn-transparent btn color" type="text" name="nombre" placeholder="Nombre">
+                                <span class="focus-input100"></span>
+        
+                            </div>
+                            <br>                                
+                            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                <input class="input100; btn btn-transparent btn" type="text" name="email" placeholder="Email">
+                                <span class="focus-input100"></span>
+        
+                            </div>
+                            <br>
+                            <div class="wrap-input100 validate-input" data-validate = "Mensaje obligatorio">
+                                <textarea class="input100; btn btn-transparent btn" name="message" placeholder="Mensaje" cols="60"  rows="10"></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+                            <br>
+                            <div class="container-contact100-form-btn">
+                                <button class="contact100-form-btn; btn btn-orange" type="button" >
+                                    <span style="color:white !important; font-size:1.4em;" >Enviar</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        </section><!-- end section-->
+        
+        <!--FOOTER SECTION-->
+        <footer class="footer section">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="widget">
+                            
+                            <h3 class="widget-title">
+                                YUNGAS HOSPEDAJE
+                            </h3>
+                            <div class="about-widget">
+                            
+                            </div><!-- end about-widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                    <div class="col-md-8 mobmartop30">
+                        <div class="widget">
+                            <div class="footer-links">
+                                <nav class="foot-link">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="templates/about.html">¿Donde encontrarnos?</a></li>
+                                        <li><a href="templates/contacto.html">Contáctanos</a></li>
+                                        
+                                    </ul>
+                                </nav><!-- end foot -->
+                            </div><!-- end links -->
 
-  <!--Botones-->
-      <a class="btn btn-primary btn-lg" href="{{url_for('fotos')}}"fotos role="button">Fotos del lugar!</a>
-      <br>
-      <hr class= "my-4"> 
-      <br><br>
-      <button type="button" href="{{url_for('contacto')}}" class="btn btn-info">Contáctanos</button>
-  </center>
+                            <div class="widget">
+                                <div class="contact-widget">
+                                    <div class="row">
+                                        <!-- end col -->
 
-{% endblock %}
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-phone"></i> Phone
+                                            </h4>  
+                                            <p>+54 (911) 1161548810</p>
+                                        </div><!-- end col -->
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-envelope-open-o"></i>  Email
+                                            </h4>  
+                                            <p>yungas.hospedaje@gmail.com</p>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                    <br>
+                                    <div class="row">        
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-facebook"></i>Facebook
+                                            </h4>  
+                                            <p>Yungas hospedaje</p>
+                                        </div><!-- end col -->
+                                        
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-instagram"></i> Instagram
+                                            </h4>  
+                                            <p>@yungas.hospedaje</p>
+                                        </div><!-- end col -->
+                                    </div><!--end row-->
+                                </div><!-- end contact-widget -->
+                            </div><!-- end widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
 
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-social">
+                            <div itemscope="" itemtype="http://schema.org/Organization">
+                                <a class="social-icon" target="_blank" itemprop="sameAs" href="https://www.instagram.com/yungas.hospedaje/"><i class="fa fa-instagram"></i></a>
+                                <a class="social-icon" target="_blank" itemprop="sameAs" href="https://www.facebook.com/yungashospedaje"><i class="fa fa-facebook"></i></a>
+                                
+                            </div>
+                        </div>
+                        <div class="footer-copy">
+                            <p>© 2020 All Rights Reserved <a href="#">Yungas hospedaje</a></p>
+                        </div><!-- end copy -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer><!-- end footer -->
+    </div><!-- end wrapper -->
 
+    <div class="dmtop"><i class="fa fa-long-arrow-up"></i></div>
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
